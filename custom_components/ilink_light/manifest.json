@@ -1,0 +1,18 @@
+{
+	"domain": "ilink_light",
+	"name": "iLink Light",
+	"bluetooth": [
+		{
+			"connectable": true,
+			"service_uuid": "0000a032-0000-1000-8000-00805f9b34fb"
+		}
+	],
+	"codeowners": ["@donandren"],
+	"config_flow": true,
+	"dependencies": ["bluetooth"],
+	"documentation": "https://github.com/donandren/ilink_light",
+	"iot_class": "local_push",
+	"issue_tracker": "https://github.com/donandren/ilink_light/issues",
+	"requirements": [],
+	"version": "0.1.0"
+}

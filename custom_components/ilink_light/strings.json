@@ -1,0 +1,81 @@
+{    
+	"title": "iLink Light",
+    "config": {         
+        "step": {                    
+            "add_device": { 
+				"title": "iLink Light: Add device",
+                "description": "Enter your device details.", 
+                "data": {                     
+                    "name": "Name of device",                     
+                    "mac": "MAC Address",                                   
+                    "scan_interval": "Scan Interval in seconds",
+                    "scan_interval_fast": "Fast Scan Interval in seconds"  						
+                }                                                            
+            }
+        },
+		"error": {
+			"cannot_connect": "Failed to connect"
+		},
+		"abort": {
+            "add_success": "Device {dev_name} successfully added",
+			"already_configured": "Integration already exists",
+            "device_already_configured": "Device {dev_name} is already configured"
+		}		
+    },   
+    "options": {         
+        "step": {
+            "init": {
+				"title": "iLink Light BLE Configuration",
+                "description": "Please select the desired action."
+            },
+            "add_device": {
+				"title": "iLink Light: Add device",
+                "description": "Enter your device details.",
+                "data": {
+                    "name": "Name of device",
+                    "mac": "MAC Address",
+                    "scan_interval": "Scan Interval in seconds",
+                    "scan_interval_fast": "Fast Scan Interval in seconds"
+                }
+            },
+            "edit_device": {
+				"title": "iLink Light: Edit device",
+                "description": "Enter new device details for {dev_name}",
+                "data": {                     
+                    "name": "Name of device",                     
+                    "mac": "MAC Address",                                
+                    "scan_interval": "Scan Interval in seconds",
+                    "scan_interval_fast": "Fast Scan Interval in seconds"  	
+                }                                     
+            },
+            "remove_device": {
+                "title": "iLink Light: Remove device",
+                "description": "Select device to remove.",
+                "data": {}
+            },
+            "select_edit_device": {
+				"title": "iLink Light: Edit Device",
+                "description": "Select device to edit.",
+                "data": {}
+            }
+        },
+		"error": {
+			"cannot_connect": "Failed to connect"
+		},
+		"abort": {
+            "add_success": "Device {dev_name} successfully added",
+			"already_configured": "Device {dev_name} is already configured",
+            "edit_success": "Device {dev_name} edited",
+            "remove_success": "Device {dev_name} removed"
+		}
+    },
+    "selector": {
+        "action": {
+            "options": {
+                "add_device": "Add device",
+                "edit_device": "Edit device",
+                "remove_device": "Remove device"
+            }
+        }
+    }
+}
